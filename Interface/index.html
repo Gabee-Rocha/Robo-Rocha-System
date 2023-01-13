@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main_login">
@@ -17,13 +18,14 @@
                 <h1>LOGIN</h1>
                 <div class="textfield">
                     <label for="usuario"> Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
+                    <input type="text" name="usuario" id="user" placeholder="Usuário">
                 </div>
                 <div class="textfield">
                     <label for="senha"> Senha</label>
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
-                <button onclick="window.location.replace('segunda_tela.html')" class="btn_login">Login</button>
+                <button onclick="window.location.replace('segunda_tela.html'); 
+                capturar()" id = "btn_ok" class="btn_login">Login</button>
             </div>
         </div>
     </div>
